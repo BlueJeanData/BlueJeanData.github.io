@@ -5,28 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blue Jean Data - Data Concepts for Everyday People</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.29.0/feather.min.js" integrity="sha512-24XP4a9KVoIinPFUbcnjIjAjtS59PUoxQj3GNVpWc86bCqPuy3YxAcxJrxFCxXe4GHtAumCbO2Ze2bddtuxaRw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body class="min-h-screen font-sans text-gray-800">
     <!-- Header -->
     <header class="bg-gradient-to-r from-blue-500 to-blue-300 text-white text-center py-16 px-8">
         <h1 class="text-4xl font-bold mb-4">Blue Jean Data</h1>
         <p class="text-2xl mb-6">Data Concepts for Everyday People</p>
-        <div class="mt-6">
-            <a href="https://x.com/BlueJeanData" class="text-white no-underline mx-4 text-lg hover:text-blue-100">Twitter</a>
-            <a href="https://www.youtube.com/@bluejeandata" class="text-white no-underline mx-4 text-lg hover:text-blue-100">YouTube</a>
+        <div class="mt-6 flex justify-center items-center space-x-6">
+            <a href="https://x.com/BlueJeanData" 
+               class="flex items-center text-white no-underline text-lg hover:text-blue-100 transition-colors duration-300">
+                <i data-feather="twitter" class="mr-2"></i>
+                Twitter
+            </a>
+            <a href="https://bluejeandata.hashnode.dev/" 
+               class="flex items-center text-white no-underline text-lg hover:text-blue-100 transition-colors duration-300">
+                <i data-feather="hash" class="mr-2"></i>
+                Blog
+            </a>
+            <a href="https://www.youtube.com/@bluejeandata" 
+               class="flex items-center text-white no-underline text-lg hover:text-blue-100 transition-colors duration-300">
+                <i data-feather="youtube" class="mr-2"></i>
+                YouTube
+            </a>
         </div>
     </header>
 
     <!-- About Section -->
     <section class="py-12 px-8 max-w-6xl mx-auto">
         <h2 class="text-3xl font-bold text-center mb-8">About Us</h2>
-        <div class="max-w-3xl mx-auto">
-            <p class="mb-4">
+        <div class="max-w-3xl mx-auto space-y-4">
+            <p class="text-gray-700 leading-relaxed">
                 At Blue Jean Data, we believe data science shouldn't be intimidating. Just like your favorite pair of jeans, 
                 we make technical concepts comfortable and accessible. Our mission is to demystify data science and empower 
                 individuals and businesses to make data-driven decisions with confidence.
             </p>
-            <p>
+            <p class="text-gray-700 leading-relaxed">
                 Whether you're a business owner looking to understand your customer data or a professional wanting to level up 
                 your analytical skills, we speak your language and meet you where you are.
             </p>
@@ -45,17 +59,40 @@
         <div class="max-w-6xl mx-auto">
             <h2 class="text-3xl font-bold text-center mb-8">Our Services</h2>
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white p-8 rounded-lg shadow-md hover:transform hover:-translate-y-2 transition-transform duration-300">
-                    <h3 class="text-xl font-bold mb-4 text-blue-500 transition-colors duration-300 hover:text-blue-600">Content Creation</h3>
-                    <p>Crafting engaging and informative content tailored to your needs.</p>
+                <!-- Content Creation Card -->
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <h3 class="text-xl font-bold mb-4 text-blue-500 transition-colors duration-300 hover:text-blue-600">
+                        Content Creation
+                    </h3>
+                    <p class="text-gray-600">Crafting engaging and informative content tailored to your needs.</p>
+                    <button class="mt-4 text-blue-500 hover:text-blue-600 flex items-center transition-colors duration-300">
+                        Learn more
+                        <i data-feather="arrow-right" class="ml-2"></i>
+                    </button>
                 </div>
-                <div class="bg-white p-8 rounded-lg shadow-md hover:transform hover:-translate-y-2 transition-transform duration-300">
-                    <h3 class="text-xl font-bold mb-4 text-blue-500 transition-colors duration-300 hover:text-blue-600">R&D</h3>
-                    <p>Research & Development to drive innovation and technological advancement.</p>
+
+                <!-- R&D Card -->
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <h3 class="text-xl font-bold mb-4 text-blue-500 transition-colors duration-300 hover:text-blue-600">
+                        R&D
+                    </h3>
+                    <p class="text-gray-600">Research & Development to drive innovation and technological advancement.</p>
+                    <button class="mt-4 text-blue-500 hover:text-blue-600 flex items-center transition-colors duration-300">
+                        Learn more
+                        <i data-feather="arrow-right" class="ml-2"></i>
+                    </button>
                 </div>
-                <div class="bg-white p-8 rounded-lg shadow-md hover:transform hover:-translate-y-2 transition-transform duration-300">
-                    <h3 class="text-xl font-bold mb-4 text-blue-500 transition-colors duration-300 hover:text-blue-600">Consulting</h3>
-                    <p>Expert guidance and strategic solutions for your business challenges.</p>
+
+                <!-- Consulting Card -->
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <h3 class="text-xl font-bold mb-4 text-blue-500 transition-colors duration-300 hover:text-blue-600">
+                        Consulting
+                    </h3>
+                    <p class="text-gray-600">Expert guidance and strategic solutions for your business challenges.</p>
+                    <button class="mt-4 text-blue-500 hover:text-blue-600 flex items-center transition-colors duration-300">
+                        Learn more
+                        <i data-feather="arrow-right" class="ml-2"></i>
+                    </button>
                 </div>
             </div>
         </div>
@@ -65,14 +102,27 @@
     <section class="py-12 px-8 text-center bg-white">
         <div class="max-w-2xl mx-auto">
             <h2 class="text-3xl font-bold mb-8">Contact Us</h2>
-            <p class="mb-4">Ready to make data science work for you? Let's start a conversation about your needs and goals.</p>
-            <p class="text-lg">Email: bluejeandata@gmail.com</p>
+            <p class="mb-6 text-gray-700">
+                Ready to make data science work for you? Let's start a conversation about your needs and goals.
+            </p>
+            <a href="mailto:bluejeandata@gmail.com" 
+               class="inline-flex items-center text-lg text-blue-500 hover:text-blue-600 transition-colors duration-300">
+                <i data-feather="mail" class="mr-2"></i>
+                bluejeandata@gmail.com
+            </a>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="bg-gradient-to-r from-blue-500 to-blue-300 text-white text-center py-8">
-        <p>&copy; 2025 Blue Jean Data. All rights reserved.</p>
+        <p>&copy; <script>document.write(new Date().getFullYear())</script> Blue Jean Data. All rights reserved.</p>
     </footer>
+
+    <!-- Initialize Feather Icons -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            feather.replace();
+        });
+    </script>
 </body>
 </html>
