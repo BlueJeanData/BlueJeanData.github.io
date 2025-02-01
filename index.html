@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Business Name</title>
+    <title>Blue Jean Data - Data Concepts for Everyday People</title>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
@@ -14,47 +14,39 @@
         }
         
         header {
-            background: linear-gradient(to right, #2c3e50, #3498db);
+            background: linear-gradient(to right, #3498db, #85c1e9);
             color: white;
             text-align: center;
             padding: 4rem 2rem;
         }
         
-        nav {
-            background: #2c3e50;
-            padding: 1rem;
-            position: sticky;
-            top: 0;
-        }
-        
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 1rem;
-        }
-        
         section {
-            padding: 2rem;
+            padding: 3rem 2rem;
             max-width: 1200px;
             margin: 0 auto;
         }
         
         .services {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
             margin-top: 2rem;
         }
         
         .service-card {
             background: #f8f9fa;
-            padding: 1.5rem;
+            padding: 2rem;
             border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
         }
         
         footer {
-            background: #2c3e50;
+            background: linear-gradient(to right, #3498db, #85c1e9);
             color: white;
             text-align: center;
             padding: 2rem;
@@ -64,11 +56,21 @@
         .cta-button {
             display: inline-block;
             padding: 1rem 2rem;
-            background: #e74c3c;
+            background: #85c1e9;
             color: white;
             text-decoration: none;
             border-radius: 5px;
-            margin-top: 1rem;
+            margin-top: 1.5rem;
+            transition: background 0.3s;
+        }
+        
+        .cta-button:hover {
+            background: #3498db;
+        }
+
+        .tagline {
+            font-size: 1.5rem;
+            margin: 1.5rem 0;
         }
         
         @media (max-width: 768px) {
@@ -81,21 +83,19 @@
 <body>
     <header>
         <h1>Blue Jean Data</h1>
-        <p>Data Concepts for Everday People.</p>
-        <a href="#contact" class="cta-button">Contact Us</a>
+        <p class="tagline">Data Concepts for Everyday People</p>
+        <a href="#contact" class="cta-button">Get Started</a>
     </header>
-
-    <nav>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
-    </nav>
-
     <section id="about">
         <h2>About Us</h2>
-        <p>At Blue Jean Data, we take pride in making complex technical concepts clear and actionable. We build bridges between innovation and understanding, and transform ideas into impact.</p>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center;">
+            <div>
+                <p>At Blue Jean Data, we believe data science shouldn't be intimidating. Just like your favorite pair of jeans, we make technical concepts comfortable and accessible. Our mission is to demystify data science and empower individuals and businesses to make data-driven decisions with confidence.</p>
+                <p>Whether you're a business owner looking to understand your customer data or a professional wanting to level up your analytical skills, we speak your language and meet you where you are.</p>
+            </div>
+            <img src="/api/placeholder/400/500" alt="Blue jeans illustration" style="width: 100%; max-width: 400px; margin: 0 auto; display: block;">
+        </div>
     </section>
-
     <section id="services">
         <h2>Our Services</h2>
         <div class="services">
@@ -113,13 +113,11 @@
             </div>
         </div>
     </section>
-
     <section id="contact">
         <h2>Contact Us</h2>
-        <p>Ready to get started? Contact us today!</p>
+        <p>Ready to make data science work for you? Let's start a conversation about your needs and goals.</p>
         <p>Email: bluejeandata@gmail.com</p>
     </section>
-
     <footer>
         <p>&copy; 2025 Blue Jean Data. All rights reserved.</p>
     </footer>
