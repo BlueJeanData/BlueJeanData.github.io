@@ -4,127 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blue Jean Data - Data Concepts for Everyday People</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            color: #333;
-        }
-        
-        header {
-            background: linear-gradient(to right, #3498db, #85c1e9);
-            color: white;
-            text-align: center;
-            padding: 4rem 2rem;
-        }
-        
-        section {
-            padding: 3rem 2rem;
-            max-width: 1200px;
-            margin: 0 auto;
-            text-align: center;
-        }
-        
-        .services {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-        
-                    .service-card {
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            transition: transform 0.3s;
-            text-align: center;
-        }
-        
-        .service-card:hover {
-            transform: translateY(-5px);
-        }
-        
-        footer {
-            background: linear-gradient(to right, #3498db, #85c1e9);
-            color: white;
-            text-align: center;
-            padding: 2rem;
-            margin-top: 2rem;
-        }
-        
-        .cta-button {
-            display: inline-block;
-            padding: 1rem 2rem;
-            background: #85c1e9;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 1.5rem;
-            transition: background 0.3s;
-        }
-        
-        .cta-button:hover {
-            background: #3498db;
-        }
-
-        .tagline {
-            font-size: 1.5rem;
-            margin: 1.5rem 0;
-        }
-        
-        @media (max-width: 768px) {
-            .services {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <h1>Blue Jean Data</h1>
-        <p class="tagline">Data Concepts for Everyday People</p>
-        <div style="margin-top: 1.5rem;">
-            <a href="https://x.com/BlueJeanData" style="color: white; text-decoration: none; margin: 0 15px; font-size: 1.1rem;">Twitter</a>
-            <a href="https://www.youtube.com/@bluejeandata" style="color: white; text-decoration: none; margin: 0 15px; font-size: 1.1rem;">YouTube</a>
+<body class="min-h-screen font-sans text-gray-800">
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-blue-500 to-blue-300 text-white text-center py-16 px-8">
+        <h1 class="text-4xl font-bold mb-4">Blue Jean Data</h1>
+        <p class="text-2xl mb-6">Data Concepts for Everyday People</p>
+        <div class="mt-6">
+            <a href="https://x.com/BlueJeanData" class="text-white no-underline mx-4 text-lg hover:text-blue-100">Twitter</a>
+            <a href="https://www.youtube.com/@bluejeandata" class="text-white no-underline mx-4 text-lg hover:text-blue-100">YouTube</a>
         </div>
     </header>
-    <section id="about">
-        <h2>About Us</h2>
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center;">
+
+    <!-- About Section -->
+    <section class="py-12 px-8 max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-8">About Us</h2>
+        <div class="grid md:grid-cols-2 gap-8 items-center">
             <div>
-                <p>At Blue Jean Data, we believe data science shouldn't be intimidating. Just like your favorite pair of jeans, we make technical concepts comfortable and accessible. Our mission is to demystify data science and empower individuals and businesses to make data-driven decisions with confidence.</p>
-                <p>Whether you're a business owner looking to understand your customer data or a professional wanting to level up your analytical skills, we speak your language and meet you where you are.</p>
+                <p class="mb-4">
+                    At Blue Jean Data, we believe data science shouldn't be intimidating. Just like your favorite pair of jeans, 
+                    we make technical concepts comfortable and accessible. Our mission is to demystify data science and empower 
+                    individuals and businesses to make data-driven decisions with confidence.
+                </p>
+                <p>
+                    Whether you're a business owner looking to understand your customer data or a professional wanting to level up 
+                    your analytical skills, we speak your language and meet you where you are.
+                </p>
+            </div>
+            <div class="flex justify-center">
+                <img src="Blue Jean Data.jpg" alt="Blue jeans illustration" class="w-full max-w-md rounded-lg shadow-lg">
             </div>
         </div>
     </section>
-    <section id="services">
-        <h2>Our Services</h2>
-        <div class="services">
-            <div class="service-card">
-                <h3>Content Creation</h3>
-                <p>Crafting engaging and informative content tailored to your needs.</p>
-            </div>
-            <div class="service-card">
-                <h3>R&D</h3>
-                <p>Research & Development to drive innovation and technological advancement.</p>
-            </div>
-            <div class="service-card">
-                <h3>Consulting</h3>
-                <p>Expert guidance and strategic solutions for your business challenges.</p>
+
+    <!-- Services Section -->
+    <section class="py-12 px-8 bg-gray-50">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-8">Our Services</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-md hover:transform hover:-translate-y-2 transition-transform duration-300">
+                    <h3 class="text-xl font-bold mb-4 text-blue-500">Content Creation</h3>
+                    <p>Crafting engaging and informative content tailored to your needs.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md hover:transform hover:-translate-y-2 transition-transform duration-300">
+                    <h3 class="text-xl font-bold mb-4 text-blue-500">R&D</h3>
+                    <p>Research & Development to drive innovation and technological advancement.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md hover:transform hover:-translate-y-2 transition-transform duration-300">
+                    <h3 class="text-xl font-bold mb-4 text-blue-500">Consulting</h3>
+                    <p>Expert guidance and strategic solutions for your business challenges.</p>
+                </div>
             </div>
         </div>
     </section>
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <div style="max-width: 800px; margin: 0 auto;">
-            <p>Ready to make data science work for you? Let's start a conversation about your needs and goals.</p>
-            <p>Email: bluejeandata@gmail.com</p>
+
+    <!-- Contact Section -->
+    <section class="py-12 px-8 text-center">
+        <div class="max-w-2xl mx-auto">
+            <h2 class="text-3xl font-bold mb-8">Contact Us</h2>
+            <p class="mb-4">Ready to make data science work for you? Let's start a conversation about your needs and goals.</p>
+            <p class="text-lg">Email: bluejeandata@gmail.com</p>
         </div>
     </section>
-    <footer>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-r from-blue-500 to-blue-300 text-white text-center py-8">
         <p>&copy; 2025 Blue Jean Data. All rights reserved.</p>
     </footer>
 </body>
